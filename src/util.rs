@@ -21,8 +21,8 @@ use crate::ss::SS_DBUS_NAME;
 use rand::{rngs::OsRng, Rng};
 use zbus::export::ordered_stream::OrderedStreamExt;
 use zbus::{
+    proxy::CacheProperties,
     zvariant::{self, ObjectPath},
-    CacheProperties,
 };
 
 // Helper enum for locking
